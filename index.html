@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Where in Ireland do I fit in?</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Where in Ireland do I fit in?">
+  <meta name="author" content="">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/prettify/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Where in Ireland do I fit in?</h1>
+    <h2>Interactive ranking of Irish counties by demographic markers</h2>
+    <p><br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <article data-timings="">
+    <style>
+.title-slide hgroup > h1, 
+.title-slide hgroup > h2 {
+  color: #000000 ;  /* ; #000000*/
+}
+</style>
+
+<h2>Where in Ireland do I fit in?</h2>
+
+<style>
+em {
+  font-style: italic
+}
+</style>
+
+<style>
+  .title-slide {
+     background-image: url(http://backgrounds.picaboo.com/download/a6/62/a62c303020d64f678ddc7a5818437f65/spring_green_clover.jpg);
+   }
+</style>
+
+<style>
+{class: class1, bg: yellowgreen, id: id1}
+</style>
+
+<h1>Exploring and matching Demographics in Ireland</h1>
+
+<p><br>      </p>
+
+<p>Demographic data from the Irish census of 2011 is readily available online at <a href="http://www.cso.ie/en/census/census2011reports/">Irish Census Data 2011</a>. However, the analysis options offered are a little rigid, with limited interactivity.   </p>
+
+<p>In particular, there is no interactive ranking of counties by demographic markers offered, to answer questions such as:  </p>
+
+<ul>
+<li><em>Which county has the highest per capita percentage of people aged 85 or older?</em><br></li>
+<li><em>Which county has the lowest density of people who completed schooling with a PhD?</em><br></li>
+<li><em>Which county has the highest population density of US-born residents?</em><br>
+<br>
+The purpose of my Shiny application is to offer a user-friendly framework in which to answer questions like that, by directly accessing the official online census data and creating rankings of counties by demographic markers based on user input.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Sample Use Case</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>I could be a German who is moving to Ireland and cherishes being near other native Germans. I could analyze the data and produce a plot.<br>
+It would seem, in this case, that <em>Leitrim</em> may be the county of my dreams.</p>
+
+<p><img src="assets/fig/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Expanding to multiple demographic perspectives</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>However, I may be interested in looking at the best fit from other perspectives: perhaps I want to see where the largest proportion of people in my age group live; perhaps I am interested to see where the greatest proportion of people with a similar educational background live.  </p>
+
+<p>This is the purpose of the <a href="https://tomany.shinyapps.io/Shinyproj">Where in Ireland do I fit in</a> application.</p>
+
+<p>With this application, we can analyze the closest (and least close) demographic fit by county in the following areas:<br>
+<br></p>
+
+<ul>
+<li>Education</li>
+<li>Nationality</li>
+<li>Sex</li>
+<li>Marital Status</li>
+<li>Age Group<br></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Operation of the application</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The user simply selects the demographic category in each of the rubrics which describes the desired population of where they would like to live.<br>
+<br>
+The output contains a description tab and 5 tabs, each for one demographic category chosen.<br>
+<br>
+The counties are ranked by population percentage most aligned with the demographic category in each area to least.<br>
+<br>
+The application is interactive, and to change the reference demographic category, the user simply selects an alternative category and the ranking is automatically adjusted.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Sample Use Case'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Expanding to multiple demographic perspectives'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Operation of the application'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- Google Prettify -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
+  <script src='libraries/highlighters/prettify/js/lang-r.js'></script>
+  <script>
+    var pres = document.getElementsByTagName("pre");
+    for (var i=0; i < pres.length; ++i) {
+      pres[i].className = "prettyprint linenums";
+    }
+    prettyPrint();
+  </script>
+  <!-- End Google Prettify --> 
+  </html>
